@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery </title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<h1>📸 Image Gallery</h1>
+
+<div class="controls">
+  <input type="text" id="searchInput" placeholder="Search (city, nature, people)">
+
+  <div class="buttons">
+    <button data-category="all" class="active">All</button>
+    <button data-category="nature">Nature</button>
+    <button data-category="city">City</button>
+    <button data-category="people">People</button>
+    <button data-category="technology">Technology</button>
+  </div>
+</div>
+
+<div class="gallery" id="gallery"></div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <span id="close">&times;</span>
+  <img id="modalImg">
+</div>
+
+<script src="gallery.js"></script>
+</body>
+</html>
